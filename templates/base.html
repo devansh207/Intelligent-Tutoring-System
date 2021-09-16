@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>WEBSQL- Intelligent Tutoring System</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+<!-- Latest compiled and minified CSS -->
+<!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+     <script src="encoder.js" type="text/js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse" style="min-height:80px; padding:0;margin:0;border-color:#222; position:fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> -->
+        <a class="navbar-brand" href="index" style="font-size:27px;margin-top:9px;font-family: 'Nanum Myeongjo', serif;">WebSQL - Intelligent Tutoring System</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+<!--         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+ -->  </ul>
+<!--   <li><a href="#">Link</a></li>
+         -->
+         <!-- <li class="dropdown">
+           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a> -->
+          <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">Related sites
+        <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://learnsql.com/blog/green-light-to-learn-sql/">Article</a></li>
+            <li><a href="https://www.codecademy.com/learn/learn-sql">Website</a></li>
+            <li><a href="https://learnsql.com/blog/">Blog</a></li> -->
+            <!-- <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li> -->
+<!--      <ul class="nav navbar-nav navbar-right">-->
+<!--          {% if user.is_authenticated %}-->
+<!--          <li><a href="{% url 'accounts:logout' %}" class="btn btn-simple">Log out</a></li>-->
+<!--&lt;!&ndash;          {% else %}&ndash;&gt;-->
+<!--&lt;!&ndash;        <li><a href="login" style="font-size:15px;margin-top:9px;font-family: 'Libre Baskerville', serif;">Login</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;        <li><a href="signup" style="font-size:15px;margin-top:9px;font-family: 'Libre Baskerville', serif;">SignUp</a></li>&ndash;&gt;-->
+<!--          {% endif %}-->
+
+<!--      </ul>-->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+{% block content%}
+{% endblock %}
+<footer>
+<div class="container-fluid" style="position: auto; left: 0; bottom:0; width : 100%; background-color: #222; border-color: #080808;color: white;height: 180px;font-family: sans-serif;text-align: center;"><br>
+    <div class="row" >
+        <div class="col-lg-4">
+            <u><h4>About Us</h4><br></u>
+            <p style="font-family: italic; font-weight: 50px;color:white;">Our system provides opportunity for students to learn SQL fundamentals by solving number of questions and improve their skills.</p>
+            <div></div>
+        </div>
+        <div class="col-lg-4" style="color: white;">
+             <u><h4>Account</h4><br></u>
+             <li><a href="aboutus.html">About Us</a><br></li>
+             <li><a href="index">Home Page</a><br></li>
+             <li><a href="signup">Sign Up Page</a></li>
+        </div>
+        <div class="col-lg-4">
+             <u><h4>Contact Us</h4><br></u>
+             <li><a href="https://www.djsce.ac.in">Djsce</a><br></li>
+             <li><a href="https://www.facebook.com">Facebook</a><br></li>
+             <li><a href="https://www.instagram.com">Instagram</a></li>
+        </div>
+    </div>
+</div>
+</footer>
+
+</body>
+
+</html>

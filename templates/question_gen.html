@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block content %}
+{% load bootstrap4 %}
+<script src="./templates/encoder.js" type="text/js"></script>
+<div class="jumbotron" >
+      <div class="container" style="min-height:300px">
+
+          <h2 align="right">Schema</h2>
+          <table align="right" border="1" style="border-spacing : 5px; border-collapse : seperate">
+            <tr>
+                <th>Table Name</th>
+                <th colspan="5" style="text-align:right">Attributes</th>
+            </tr>
+              <tr>
+                  <th>Book</th>
+                  <td>book_no</td>
+                  <td>title</td>
+                  <td>genre</td>
+                  <td>author</td>
+                  <td>price</td>
+              </tr>
+              <tr>
+                  <th>Customer</th>
+                  <td>cust_id</td>
+                  <td>lname</td>
+                  <td>fname</td>
+                  <td>area</td>
+                  <td>phone_no</td>
+              </tr>
+              <tr>
+                  <th>Invoice</th>
+                  <td>inv_no</td>
+                  <td>book_no</td>
+                  <td>issue_date</td>
+                  <td>return_date</td>
+                  <td>cust_id</td>
+              </tr>
+          </table>
+        <form method="POST" autocomplete="off">{% csrf_token %}
+          <p>{{ques}}</p><br>
+          User Answer: <input type="text" name="answer" style="width:50%" autocomplete="off" value="{{answer}}">
+          <textarea name="correct_answer" rows="1" cols="80" style="visibility: hidden">{{query}}</textarea>
+          <textarea name="ques" rows="1" cols="80" style="visibility: hidden">{{ques}}</textarea><br/>
+          <input type="submit" class="btn btn-primary" value="Submit" />
+        </form><br>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="Next" style="visibility: {{dis}}"/>
+        </form>
+        <br>
+        <br>
+      <p>{{feedback}}</p>
+          <h3 style="visibility : {{out_dis}}">Output:<p>{{output}}</p></h3>
+      <button type="button" style="visibility: {{dis_hint}}" class="btn btn-primary" onclick="hint({{hint1}})">Hint 1</button>
+      <button type="button" style="visibility: {{disa}}" class="btn btn-primary" onclick="hint({{hint2}})">Hint 2</button><br><br>
+          Hint 3: One of the possible solution <br><br>
+<!--          <p style="visibility:{{dis}}" id="demo"></p>
+          <button type="button" style="visibility:{{dis}}" class="textarea" onclick="myFunction({{query}})">Show answer</button>
+       <textarea type="textarea" id="ans" name="correct_answer" rows="1" cols="80" style="visibility: {{dis}}">{{query}}</textarea><br/><br/>-->
+      <form name="form1">
+          <input onclick="input()" type="button" value="Show Answer" id="button" style="visibility:{{hint3}}"><br><br>
+          <textarea name="area" style="visibility:{{hint3}}; s" type="text"></textarea>
+      </form>
+
+      </div>
+    </div>
+
+
+  <script>
+
+  function hint(msg){
+    console.log('A')
+    function alerts(){
+      console.log('B')
+      window.alert(msg);
+     }
+     return alerts();
+  }
+
+function input(){
+    txt = "{{query}}";
+    console.log(txt);
+    document.forms.form1.area.value=(txt);
+
+}
+  </script>
+{% endblock %}

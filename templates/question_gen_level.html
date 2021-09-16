@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class=container style="width:100%; min-height:300px">
+    <h2>SQL-Overview</h2>
+    <p>SQL is a language to operate databases; it includes database creation, deletion, fetching rows, modifying rows, etc. SQL is an ANSI (American National Standards Institute) standard language, but there are many different versions of the SQL language.</p>
+    <h3>What is SQL?</h3>
+    <p>SQL is Structured Query Language, which is a computer language for storing, manipulating and retrieving data stored in a relational database.</p>
+    <p>SQL is the standard language for Relational Database System. All the Relational Database Management Systems (RDMS) like MySQL, MS Access, Oracle, Sybase, Informix, Postgres and SQL Server use SQL as their standard database language.</p>
+    <h4>SQL-Syntax</h4>
+    <p>All the SQL statements start with any of the keywords like SELECT, INSERT, UPDATE, DELETE, ALTER, DROP, CREATE, USE, SHOW and all the statements end with a semicolon (;).
+        The most important point to be noted here is that SQL is case insensitive, which means SELECT and select have same meaning in SQL statements.
+        Whereas, MySQL makes difference in table names.
+        So, if you are working with MySQL, then you need to give table names as they exist in the database.<br>
+    Level 1 consist of basic SQL queries.<br>
+    Level 2 consist of where clause based SQL queries.<br>
+        Level 3 consist of order by and having clause based SQL queries.<br>
+        Level 4 consist of having by clause based SQL queries<br>
+    </p>
+    <h4>Choose the level of difficulty:</h4>
+    <ul style="font-size:17px">
+      <li><a class="button" href="question-lvl-one">Level 1</a></li>
+      <li><a class="button" href="question-lvl-two" >Level 2</a></li>
+      <li><a class="button" href="question-lvl-three">Level 3</a></li>
+      <li><a class="button" href="question-lvl-four" >Level 4</a></li>
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,75 @@
+SELECT
+FROM
+WHERE
+GROUP
+BY
+GROUP BY
+ORDER
+LIKE
+AVERAGE
+Devansh
+Himanshu
+Ansh
+Parth
+Bhavesh
+Dhaval
+Riddhi
+Srishti
+Mehta
+Ashar
+Shah
+Tank
+Singh
+Prasad
+Malad
+Parle
+Bandra
+Ulhasnagar
+Thane
+Borivali
+Kandivali
+Chembur
+One Hundred Years of Solitude
+Flowers in the Attic
+The Eagle Has Landed
+Then There Were None
+A Tale of Two Cities
+Lord of the Rings
+The Catcher in the Rye
+Harry Potter
+Immortals of Meluha
+Magic Realism
+Young Adult
+Historical
+Mystery
+Classic Literary
+Fiction
+Fantasy
+Mythology
+Gabriel Marquez
+V.C.Andrews
+Jack Higgings
+Agatha Cristie
+Charles Dickens
+J.R.R.Tolkein
+J.D Salinger
+JK Rowling
+Amish
+Customer
+cust_id
+lname
+fname
+area
+phone_no
+inv_no
+book_no
+cust_id
+issue_date
+return_date
+Invoice
+Book
+book_no
+title
+genre
+author
+price
